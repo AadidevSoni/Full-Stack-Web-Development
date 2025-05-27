@@ -1,0 +1,18 @@
+* {
+  margin: 0;  
+}
+
+div {
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  padding: 20px;
+  margin: 2px;
+}
+
+p {
+  border: 3px dotted blue;  
+  border-left: 2px solid violet;
+  padding-left: 30px;
+  padding: 10px 0px; /* Adds padding to top and bottom only */
+}
