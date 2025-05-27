@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Margin -->
+    <!-- https://tailwindcss.com/docs/margin -->
+
+    <h3>1. Margin</h3>
+    <div class="m-4 bg-green-100">Margin All Around</div>  
+    <div class = "mx-4 bg-green-200">Margin from x axis</div>
+    <div class = "my-4 bg-green-300">Margin from Y axis</div>
+    <div class = "mt-6 bg-green-400">Margin Top</div>
+    <div class = "mr-6 bg-green-500">Margin Right</div>
+    <div class = "ml-6 bg-green-600">Margin Left</div>
+    <div class = "mb-6 bg-green-700">Margin Bottom</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Arbitrary Spacing -->
+
+    <div class = "m-[50px] bg-slate-400 text-center">2. Margin All Around</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Padding -->
+    <!-- https://tailwindcss.com/docs/padding -->
+
+    <h3>3. Padding</h3>
+    <div class = "bg-lime-100 p-6">Padding All Around</div>
+    <div class = "bg-lime-200 px-4">Padding from x axis</div>
+    <div class = "bg-lime-300 py-4">Padding from y axis</div>
+    <div class = "bg-lime-400 pt-4">Padding Top</div>
+    <div class = "bg-lime-500 pr-4">Padding Right</div>
+    <div class = "bg-lime-600 pl-4">Padding Left</div>
+    <div class = "bg-lime-700 pb-[100px ]">Padding Bottom</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- https://tailwindcss.com/docs/space -->
+    <!-- Space Between X -->
+
+    <h3>Space Between X</h3>
+    <div class = "flex space-x-4">
+      <div class = "p-3 bg-teal-100">01</div>
+      <div class = "p-3 bg-teal-200">02</div>
+      <div class = "p-3 bg-teal-300">03</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <!-- Space Between Y -->
+
+    <h3>Space Between Y</h3>
+    <div class = "flex flex-col space-y-4">
+      <div class = "p-3 bg-teal-100">01</div>
+      <div class = "p-3 bg-teal-200">02</div>
+      <div class = "p-3 bg-teal-300">03</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+  </body>
+</html>
