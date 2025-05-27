@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  padding: 20px;
+  background: rgb(56, 57, 56);
+
+  /* GRID STUFF */
+  display: grid;
+
+  /*grid-template-columns: 100px 100px 100px;
+
+  NAMING 
+
+  /*
+  grid-template-columns: [START]100px 100px [END]100px;
+  1fr takes up the whole space available even on resizing
+
+  grid-template-columns: repeat(3,1fr); 
+  grid-template-rows: repeat(3,200px);
+  */
+
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+
+  /* 
+  minmax
+  grid-template-columns: 1fr minmax(200px,1fr) 1fr;
+  The above will amke it such that if we shrink our screen, it wont shrink the elements below 200px
+
+  autofit
+  grid-template-columns: repeat(auto-fit,200px) 
+  It will fit the max number of columns possible with  the given eleemnts
+
+  autofill
+  grid-template-columns: repeat(auto-fill,200px) 
+  It will make a grid with max no of columns even if there are not enough elements
+  */
+  grid-gap: 10px;
+
+  /* All flex properties are applicable here 
+  align-content: center;
+  justify-content: space-around ;
+  */
+
+  grid-template-areas: "h h h h" /* header takes line 1 to 4 */
+                       "m m m m"
+                       "s s . a"
+                       "f f f f";
+}
+
+
+aside {
+  /*grid-column-end: -1; Places aside at the left most grid
+  order: 1;
+  align-self: center;*/
+
+  grid-area: a;
+}
+
+
+header {  /* spans or expands the grid line 1 to grid line 3 for headerr 
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /*grid-column: 1/3;
+  Naming
+  grid-column: START/END
+  */
+
+  grid-area: h;
+  
+}
+
+main {
+  grid-area: m;
+}
+
+section {
+  grid-area: s;
+}
+
+
+
+footer {
+  /*
+  grid-row-start: 2;
+  grid-row-end: 4;
+  */
+  grid-area: f;
+}
+
+
+.s {
+  padding: 20px;
+  background: rgb(145, 146, 145);
+  text-align: center;
+  color: rgb(62, 62, 62);
+}
+
+/*
+CSS grid Gardem
+
+grid-area: 1 / 1 / 3 / 6;  order: grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.
+
+#garden {
+  display: grid;
+grid-template-columns: 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+grid-template-columns: 50px repeat(3,1fr) 50px;
+
+grid-template: 50% 50% / 200px; will create a grid with two rows that are 50% each, and one column that is 200 pixels wide.
+*/
