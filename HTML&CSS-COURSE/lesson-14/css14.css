@@ -1,0 +1,40 @@
+/* TRANSFORMATION */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.container>div {
+  width: 200px;
+  height: 200px;
+  background: cyan;
+  transform: translateY(-200px);
+  transform: translateX(100px);
+  transform: translate(100px, 200px);
+  transform: rotate(45deg);
+  transform: scale(2);
+  transform: scale(1,2);
+  transform: skew(50deg);
+}
+
+/* TRANSITION */
+
+.container > a {
+  padding-top: 50px;
+  text-decoration: none;
+  border: 2px solid red;
+  padding: 10px 20px;
+  color: brown;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+
+}
+
+.container > a:hover {
+  background-color: brown;
+  color: white;
+}
