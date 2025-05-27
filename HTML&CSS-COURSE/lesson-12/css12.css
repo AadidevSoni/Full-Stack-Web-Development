@@ -1,0 +1,57 @@
+/*BEFORE AFTER SELECTOR*/
+/* 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+  */
+
+/* Places the content before the contents inside the paragraph */
+/*
+p::before{
+  content: "Hello";
+  background: rebeccapurple;
+  font-size: 20px;
+  color: pink;
+  font-weight: 800;
+}
+
+p::after{
+  content: "World";
+  background: rebeccapurple;
+  font-size: 20px;
+  color: pink;
+  font-weight: 800;
+}
+*/
+
+/* NOT SELECTOR */
+
+body {
+  background: rgb(73, 73, 73);
+  color: white;
+  padding: 2rem;
+}
+
+.section {
+  width: 42em;
+  margin: 0 auto;
+  background: rgb(54, 54, 54);
+  padding: 4rem;
+}
+
+.section .article-title :not(.content) {
+  color: green;
+}
+
+.section button:not([disabled]) {
+  font-size: 20px;
+  background: lightgreen;
+}
+
+.section a:not([href*="www.wikipedia.com"]) {
+  color: green;
+}
