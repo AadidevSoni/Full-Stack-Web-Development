@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+}
+
+div {
+  height: 100vh;
+  background-color: greenyellow;
+  background-image: url(Images/pexels-ash-craig-122861-376464.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Gives parallax effect when u scroll down */
+}
