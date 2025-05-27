@@ -1,0 +1,19 @@
+body {
+  background: coral;
+  font-size: 5rem;
+}
+
+/* The below media queries are applied only if the screen size hit 1000px ie, smaller than 1000px */
+@media screen and (max-width: 1000px){
+  body {
+    background: blue;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+  body {
+    background: teal;
+    font-size: 1rem;
+  }
+}
