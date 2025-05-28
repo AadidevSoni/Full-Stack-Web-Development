@@ -47,6 +47,7 @@
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-indigo-200: oklch(87% 0.065 274.039);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
+    --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-purple-200: oklch(90.2% 0.063 306.703);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
@@ -1238,6 +1239,30 @@
     @media (width >= 96rem) {
       background-color: var(--color-red-500);
     }
+  }
+}
+@layer base {
+  a {
+    color: var(--color-green-500);
+    text-decoration-line: underline;
+  }
+}
+@layer components {
+  .menu-button {
+    margin-top: calc(var(--spacing) * 4);
+    background-color: var(--color-indigo-500);
+    padding: calc(var(--spacing) * 3);
+    color: var(--color-white);
+  }
+}
+@layer utilities {
+  .text-green-500 {
+    color: white;
+    font-weight: bold;
+    background: teal;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
   }
 }
 @property --tw-space-y-reverse {
