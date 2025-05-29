@@ -820,12 +820,6 @@
   .bg-\[\#FBF7EE\] {
     background-color: #FBF7EE;
   }
-  .bg-\[\#FBF7\] {
-    background-color: #FBF7;
-  }
-  .bg-\[\#F\] {
-    background-color: #F;
-  }
   .bg-\[\#\] {
     background-color: #;
   }
@@ -1653,30 +1647,6 @@
     @media (width >= 96rem) {
       background-color: var(--color-red-500);
     }
-  }
-}
-@layer base {
-  a {
-    color: var(--color-green-500);
-    text-decoration-line: underline;
-  }
-}
-@layer components {
-  .menu-button {
-    margin-top: calc(var(--spacing) * 4);
-    background-color: var(--color-indigo-500);
-    padding: calc(var(--spacing) * 3);
-    color: var(--color-white);
-  }
-}
-@layer utilities {
-  .text-green-500 {
-    color: white;
-    font-weight: bold;
-    background: teal;
-    margin-top: 10px;
-    text-align: center;
-    padding: 20px;
   }
 }
 @property --tw-rotate-x {
