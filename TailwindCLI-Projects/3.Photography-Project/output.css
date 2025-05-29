@@ -652,15 +652,6 @@
   .w-\[800px\] {
     width: 800px;
   }
-  .w-\[900px\] {
-    width: 900px;
-  }
-  .w-\[8100px\] {
-    width: 8100px;
-  }
-  .w-\[9000px\] {
-    width: 9000px;
-  }
   .w-auto {
     width: auto;
   }
@@ -897,9 +888,6 @@
   .bg-\[\#6a3b7e\] {
     background-color: #6a3b7e;
   }
-  .bg-\[\#29\] {
-    background-color: #29;
-  }
   .bg-\[\#292A2B\] {
     background-color: #292A2B;
   }
@@ -908,9 +896,6 @@
   }
   .bg-\[\#\] {
     background-color: #;
-  }
-  .bg-\[\#d3feff\] {
-    background-color: #d3feff;
   }
   .bg-\[\#e3fdfe\] {
     background-color: #e3fdfe;
@@ -926,15 +911,6 @@
   }
   .bg-\[\#f5deff\] {
     background-color: #f5deff;
-  }
-  .bg-\[\$1BC8D3\] {
-    background-color: $1BC8D3;
-  }
-  .bg-\[\$1BC\] {
-    background-color: $1BC;
-  }
-  .bg-\[\$\] {
-    background-color: $;
   }
   .bg-amber-200 {
     background-color: var(--color-amber-200);
@@ -1257,9 +1233,6 @@
   }
   .text-\[\#1BC8D3\] {
     color: #1BC8D3;
-  }
-  .text-\[\#1\] {
-    color: #1;
   }
   .text-\[\#1f1f1f\] {
     color: #1f1f1f;
@@ -1646,13 +1619,6 @@
       }
     }
   }
-  .hover\:bg-blue-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-500);
-      }
-    }
-  }
   .hover\:bg-blue-700 {
     &:hover {
       @media (hover: hover) {
@@ -1711,19 +1677,9 @@
       display: none;
     }
   }
-  .sm\:h-\[auto\] {
-    @media (width >= 40rem) {
-      height: auto;
-    }
-  }
   .sm\:h-auto {
     @media (width >= 40rem) {
       height: auto;
-    }
-  }
-  .sm\:w-\[auto\] {
-    @media (width >= 40rem) {
-      width: auto;
     }
   }
   .sm\:w-auto {
@@ -1787,16 +1743,6 @@
       display: block;
     }
   }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
-  .md\:h-\[40rem\] {
-    @media (width >= 48rem) {
-      height: 40rem;
-    }
-  }
   .md\:h-\[60rem\] {
     @media (width >= 48rem) {
       height: 60rem;
@@ -1805,11 +1751,6 @@
   .md\:w-60 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 60);
-    }
-  }
-  .md\:w-100 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 100);
     }
   }
   .md\:flex-col {
