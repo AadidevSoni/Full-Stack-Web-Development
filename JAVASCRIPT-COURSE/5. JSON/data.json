@@ -1,0 +1,11 @@
+{
+  "name" : "Aadidev",
+  "age" : 19,
+  "email" : "aadidev@gmail.com",
+  "isSubsribed" : true,
+  "hobbies" : ["Drawing","Painting"],
+  "address" : {
+    "city" : "New York",
+    "idk" : true
+  }
+}
