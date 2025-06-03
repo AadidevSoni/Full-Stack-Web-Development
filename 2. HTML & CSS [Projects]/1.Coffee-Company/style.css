@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
   --main-color: #deab5f;
@@ -44,8 +44,8 @@ li {
 li a {
   color: white;
   text-decoration: none;
-  margin-left: 40px; 
-  padding-bottom: 10px; 
+  margin-left: 40px;
+  padding-bottom: 10px;
 }
 
 li a:hover {
@@ -76,7 +76,7 @@ header {
 
 .main-headings {
   position: absolute;
-  top: 7rem; 
+  top: 7rem;
   font-size: 4rem;
   word-spacing: 10px;
 }
@@ -97,7 +97,7 @@ header {
   margin-top: 20px;
   background: transparent;
   background: var(--main-color);
-  transform: translateY(0px);   
+  transform: translateY(0px);
 }
 
 /* Header End */
@@ -240,7 +240,6 @@ header {
   border-radius: 50%;
 }
 
-
 .img-three {
   background: url(Images/Iced-Latte.jpg);
   background-position: center;
@@ -295,7 +294,6 @@ hr {
   border: var(--main-color);
   width: 500px;
   margin: 0 auto;
-
 }
 
 .para {
@@ -305,9 +303,9 @@ hr {
   margin-top: 20px;
 }
 
-/* Project End */ 
+/* Project End */
 
-/* Responsiveness */ 
+/* Responsiveness */
 
 @media only screen and (max-width: 768px) {
   .main-headings.primary-heading {
@@ -350,12 +348,11 @@ hr {
 
   .title-two {
     /*border: 10px solid red; To See the space occupied by that container */
-    margin: 0 auto;  /* Sometimes sets it at the center */
+    margin: 0 auto; /* Sometimes sets it at the center */
   }
 
   .products .title {
     margin-bottom: 8rem;
-    transform: translateX(210px); 
+    transform: translateX(210px);
   }
-
 }
