@@ -40,4 +40,4 @@ console.log(counter.getCount()); // Output: 1
 // The key idea here is that the count variable is not directly accessible from outside the Counter object. The public methods 
 // increment, decrement, and getCount provide controlled access to the private variable, allowing us to modify or retrieve its value 
 // indirectly. This way, we achieve encapsulation by hiding the internal implementation details of the Counter object and exposing only 
-// the necessary interface for interacting with it.
+//  the necessary interface for interacting with it.
