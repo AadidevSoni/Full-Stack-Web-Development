@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(16,16,16);
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 10px;
+  display: flex; /* Needed to hide the download before it happens */
+}
+
+/* Button 1 */
+
+.one {
+  text-decoration: none;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  padding: 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.one:before {
+  content: "DOWNLOAD";
+  font-weight: bold;
+  color: #000;
+  position: absolute; /* relative to the one button */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: antiquewhite;
+  transform: translateY(-100%);
+  transition: all 1s;
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one:hover:before {
+  transform:translateY(0);
+}
+
+/* Button 2 */
+
+.two {
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.two:before {
+  content: "DOWNLOAD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(149,79,182,1);  
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Rotation animation */
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.two:after {
+  content: "DOWNLOAD";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(214,142,248,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+.two:hover:before,
+.two:hover:after {
+  transform: rotateX(0);
+}
