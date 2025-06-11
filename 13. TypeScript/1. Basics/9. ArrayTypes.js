@@ -1,0 +1,13 @@
+"use strict";
+const nums = [1, 2, 3, 4];
+console.log(nums);
+const str = ["one", "two", "three"];
+console.log(str);
+const items = [];
+items.push("mouse");
+console.log(items);
+const numList = [];
+numList.push(20);
+numList.push(2000);
+numList.push(-1);
+console.log(numList);

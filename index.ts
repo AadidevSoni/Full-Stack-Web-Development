@@ -1,0 +1,1 @@
+const adds = (x:number,y:number):number => x+y; 

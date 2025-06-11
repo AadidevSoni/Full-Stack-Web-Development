@@ -1,6 +1,6 @@
-function greet(person: string = "Anonymous") {
+function greet1(person: string = "Anonymous") {
   return `Hello ${person}`;
 }
 
-const res1 = greet();
+const res1 = greet1();
 console.log(res1);
