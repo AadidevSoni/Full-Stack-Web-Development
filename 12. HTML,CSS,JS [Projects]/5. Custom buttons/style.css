@@ -14,8 +14,10 @@
 }
 
 .container {
-  margin: 10px;
+  margin-right: 40px;
   display: flex; /* Needed to hide the download before it happens */
+  align-items: center;
+  justify-content: center;
 }
 
 /* Button 1 */
@@ -102,4 +104,153 @@
 .two:hover:before,
 .two:hover:after {
   transform: rotateX(0);
+}
+
+/* Button 3 */
+
+.three {
+  width: 300px;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  transform: all 0.2s;
+  color: white;
+  z-index: 1;
+}
+
+.three:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,199,120,1);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+
+.three:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  background: rgba(115,243,95,1);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+
+.three:hover:before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.three:hover:after {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
+}
+
+.three:hover {
+  color: white;
+}
+
+/* Button 4 */
+
+.four {
+  border: none;
+  padding: 1rem;
+  background: rgba(22,158,243,1);
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  margin-right: 120px;
+}
+
+.four:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  left: -10px;
+  border-top: 4px solid rgba(95,191,243,1);
+  border-left: 4px solid rgba(95,191,243,1);
+  transition: all 0.25s;
+}
+
+.four:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 4px solid rgba(95,191,243,1);
+  border-right: 4px solid rgba(95,191,243,1);
+  transition: all 0.25s;
+}
+
+.four:hover:before,
+.four:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* Button 5 */
+
+.five {
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  background: white;
+  color: black;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  margin: 20px;
+}
+
+.five:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white; 
+  border-radius: 100px;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.five:hover:before {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.five:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.five:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
