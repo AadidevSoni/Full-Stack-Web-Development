@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: rgb(16,16,16);
+  color: white;
+  height: 100vh;
+}
+
+.scroll-container {
+  background: rgb(7,7,7);
+  width: 25rem;
+  padding: 30px;
+}
+
+.scroll-div {
+  width: 400px;
+  height: 500px;
+  background: rgb(7,7,7);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-object {
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  
+  background: linear-gradient(90deg, rgba(0, 255, 196, 1.000) 0.000%, rgba(0, 255, 188, 1.000) 16.667%, rgba(0, 255, 179, 1.000) 33.333%, rgba(0, 246, 170, 1.000) 50.000%, rgba(0, 229, 161, 1.000) 66.667%, rgba(0, 211, 152, 1.000) 83.333%, rgba(0, 192, 143, 1.000) 100.000%);
+  border-radius: 20px
+}
