@@ -1,5 +1,14 @@
 function Greet(){
-  return <h1>Hello World</h1>;
+
+  let msg = "Bonjour!";
+  let date = new Date();
+
+  return <section>
+    <h1>{msg}</h1>
+    <p>{date.toDateString()}</p>
+  </section>;
 }
+
+//or const Greet = () => {}
 
 export default Greet;
