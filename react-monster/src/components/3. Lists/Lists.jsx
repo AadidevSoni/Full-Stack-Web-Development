@@ -24,38 +24,47 @@ function Lists() {
   ]
   return (
     <div>
-      <h3>List of Numbers</h3>
-      {
-        numbers.map(number => (
-          <ul key = {number} >  
-            <li>{number}</li>
-          </ul>
-        ))
-      }
+      <div style = {{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
+        <div>
+          <h3>List of Numbers</h3>
+          {
+            numbers.map(number => (
+              <ul key = {number} >  
+                <li>{number}</li>
+              </ul>
+            ))
+          }
+        </div>
+        
+        <div>
+          <h3>List of Objects</h3>
+          {
+            userInfo.map(person => (
+              <ul key = {Math.random()} >
+                <li>Name: {person.name}</li>
+                <li>Age: {person.age}</li>
+                <li>Location: {person.location}</li>
+              </ul>
+            ))
+          }
+        </div>
 
-      <h3>List of Objects</h3>
-      {
-        userInfo.map(person => (
-          <ul key = {Math.random()} >
-            <li>Name: {person.name}</li>
-            <li>Age: {person.age}</li>
-            <li>Location: {person.location}</li>
-          </ul>
-        ))
-      }
-
-      <h3>Destructuring Objects</h3>
-      {
-        userInfo.map(({name,age,location}) => (
-          <ul key = {Math.random()} >
-            <li>Name: {name}</li>
-            <li>Age: {age}</li>
-            <li>Location: {location}</li>
-          </ul>
-        ))
-      }
+        <div>
+          <h3>Destructuring Objects</h3>
+          {
+            userInfo.map(({name,age,location}) => (
+              <ul key = {Math.random()} >
+                <li>Name: {name}</li>
+                <li>Age: {age}</li>
+                <li>Location: {location}</li>
+              </ul>
+            ))
+          }       
+        </div>
+      </div>
+      <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
     </div>
   )
 }
 
-export default Lists
+export default Lists;
