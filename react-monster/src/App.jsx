@@ -27,6 +27,18 @@ import ExampleOne from "./components/8. State/ExampleOne";
 import ExampleTwo from "./components/8. State/ExampleTwo";
 import ExampleThree from "./components/8. State/ExampleThree";
 import JSRules from "./components/1. JSX/JSRules";
+import Counter from "./components/8. State/Counter";
+import ToDoList from "./components/8. State/ToDoList";
+import Profile from "./components/8. State/Profile";
+import ShoppingList from "./components/8. State/ShoppingList";
+import CopyInput from "./components/9. Portals/CopyInput";
+import Switcher from "./components/9. Portals/Switcher";
+import UseEffectHook from "./components/10. UseEffect/UseEffectHook";
+import DataFetching from "./components/10. UseEffect/DataFetching";
+import BasicEffect from "./components/10. UseEffect/BasicEffect";
+import CounterEffect from "./components/10. UseEffect/CounterEffect";
+import FetchDataEffect from "./components/10. UseEffect/FetchDataEffect";
+
 
 //Parent component : Props allow us to pass data from parent to child component
 //Child component
@@ -269,6 +281,18 @@ function App() {
       <ExampleOne />
       <ExampleTwo />
       <ExampleThree />
+      <Counter />
+      <ToDoList />
+      <Profile />
+      <ShoppingList />
+      <CopyInput />
+      <Switcher />
+      <UseEffectHook />
+      <DataFetching />
+      <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect />
+
       
     </div>
   );

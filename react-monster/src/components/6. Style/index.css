@@ -11,6 +11,8 @@ h2,
 h3,
 a,
 li,
+label,
+span,
 p{
   color: white;
 }
@@ -31,4 +33,13 @@ button:hover {
 
 button:active {
   background: rgba(67,71,71,1);
+}
+
+input {
+  padding: 10px 15px;
+  margin: 1rem;
+  background: rgba(41,43,43,1);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
 }
