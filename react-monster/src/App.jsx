@@ -38,7 +38,19 @@ import DataFetching from "./components/10. UseEffect/DataFetching";
 import BasicEffect from "./components/10. UseEffect/BasicEffect";
 import CounterEffect from "./components/10. UseEffect/CounterEffect";
 import FetchDataEffect from "./components/10. UseEffect/FetchDataEffect";
-
+import ComponentA from "./components/11. Prop Drilling, Context API & useContextHook/ComponentA";
+import { createContext } from "react";
+import UserProfile from "./components/11. Prop Drilling, Context API & useContextHook/UserProfile";
+import { UserProvider } from "./components/11. Prop Drilling, Context API & useContextHook/UserContext";
+import UpdateUser from "./components/11. Prop Drilling, Context API & useContextHook/UpdateUser";
+import UseReducerHook from "./components/12. UseReducerHook/useReducerHook";
+import CounterHook from "./components/12. UseReducerHook/CounterHook";
+import UseRefHook from "./components/13. UseRefHook/useRefHook";
+import FocusInput from "./components/13. UseRefHook/FocusInput";
+import Timer from "./components/13. UseRefHook/Timer";
+import CustomHooks from "./components/14. CustomHook/CustomHooks";
+import UniqueId from "./components/15. UseId/UniqueId";
+import ComponentC from "./components/11. Prop Drilling, Context API & useContextHook/ComponentC";
 
 //Parent component : Props allow us to pass data from parent to child component
 //Child component
@@ -115,6 +127,11 @@ const Move = () => {
   return <p onMouseMove={moveHandler}>Lorem ipsum. Eius earum itaque repellat nihil, voluptatem odit, magni iusto tempore nostrum doloremque impedit saepe perspiciatis at vel placeat ipsum harum, distinctio sed?</p>
 }
 
+  //To avoid prop drilling, we use context API which does not requirte us to manually send the data to each level of the componenty tree
+  //Context API
+  export const Data = createContext();
+  export const Hobbies = createContext();
+
 function App() {
 
   //Styles  
@@ -170,6 +187,11 @@ function App() {
   //Sharing states to other compnents
   const[counts,setCounts] = useState(0);
 
+  //Prop Drilling
+  const name = "Aadi";
+  const age = 18;
+  const hobbies = ["Gaming","Sports","Drawing"]; 
+
   return(
     <div>
       <Header/>
@@ -200,13 +222,13 @@ function App() {
 
       <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
       
-      <Password isValid = {true}/>
+      <h1>Conditional Rendering</h1>
+      <Password isValid = {true}/>  
 
       <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
 
       <Cart/>
       <Footer/>
-      <h1>Conditional Rendering</h1>
       <Weather temp={30}/>
 
       <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
@@ -239,7 +261,7 @@ function App() {
       <Move/>
       <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
 
-      <h1>States</h1>
+      <h1>UseStates</h1>
       <h2>Counter: {count}</h2>
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>
@@ -276,7 +298,7 @@ function App() {
       <ComponentOne counts ={counts} onClickHandler={() => setCounts(counts+1)}/>
       <ComponentTwo counts ={counts} onClickHandler={() => setCounts(counts+1)}/>
 
-      <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
+        <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
 
       <ExampleOne />
       <ExampleTwo />
@@ -293,6 +315,27 @@ function App() {
       <CounterEffect />
       <FetchDataEffect />
 
+      <ComponentA name={name}/>
+      <Data.Provider value={age}>
+        <Hobbies.Provider value = {hobbies}>
+          <ComponentC />
+        </Hobbies.Provider>
+      </Data.Provider>
+
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
+
+      <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p> 
+
+      <UseReducerHook />
+      <CounterHook />
+      <UseRefHook />
+      <FocusInput />
+      <Timer />
+      <CustomHooks />
+      <UniqueId />
       
     </div>
   );
