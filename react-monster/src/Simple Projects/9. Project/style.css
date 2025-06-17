@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+/* https://grabient.com/HQRgLAHANMDMCsAGKBaRoS1egTATgDZs4Rpgw9o04B2EGWWGmHMLUQqEUReYnEPCA/newest?style=linearGradient */
+
+background: linear-gradient(90deg, rgba(13, 25, 0, 1.000) 0.000%, rgba(0, 59, 43, 1.000) 25.000%, rgba(0, 101, 77, 1.000) 50.000%, rgba(0, 140, 95, 1.000) 75.000%, rgba(3, 165, 96, 1.000) 100.000%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #f3fffe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  height: 30rem;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(255, 255, 223);
+}
+
+.card-image {
+  /* background: url("../public/rohit-tandon-9wg5jCEPBsw-unsplash.jpg"); */
+
+  background: url("https://images.pexels.com/photos/5380647/pexels-photo-5380647.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 10px;
+  margin: 5px;
+  width: 20rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.error {
+  font-family: sans-serif;
+  color: red;
+}
+
+.submit-btn {
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  background: rgba(69,230,149,1);
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
