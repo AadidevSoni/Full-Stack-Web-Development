@@ -1,16 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Practice from './Practice'
-import App from './App'
+import Project3 from './Simple Projects/3. Project/Project3'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Practice />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <App />
+    <Project3 />
   </StrictMode>,
 )
