@@ -1,0 +1,28 @@
+{
+  "name": "aadi-package",
+  "version": "1.0.0",
+  "description": "the best package ever",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/AadidevSoni.git"
+  },
+  "keywords": [
+    "awesome",
+    "javascript"
+  ],
+  "author": "aadidev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github.com/AadidevSoni/issues"
+  },
+  "homepage": "https://github.com/github.com/AadidevSoni#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
