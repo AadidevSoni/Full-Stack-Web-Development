@@ -8,7 +8,7 @@ const app = express(); //Creating the server
 //  - Array Of Function
 //  - Combination Of Both
 
-// One Callback Function 🛫
+// One Callback Function
 app.get("/single-cb", (req, res) => res.send("Single Callback"));
 
 //Double callback
