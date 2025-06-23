@@ -1,0 +1,40 @@
+Inserting collection to database
+db.movies.insertOne({"name:":"Avengers End Game",ratings:8})
+---
+{
+  acknowledged: true,
+  insertedId: ObjectId('6859306f3732f131cd872f9d')
+}
+
+Checking Collection
+show collections
+---
+movies
+
+Getting help 
+db.movies.insertOne.help()
+---
+db.collection.insertOne(document, options)
+Inserts a document into a collection.
+For more information on usage: https://docs.mongodb.com/manual/reference/method/db.collection.insertOne
+
+db.movies.insertMany.help()
+---
+db.collection.insertMany(documents, options)
+Inserts multiple documents into a collection.
+For more information on usage: https://docs.mongodb.com/manual/reference/method/db.collection.insertMany
+
+Inserting Many Movies 
+const m1 = {"name":"How to train your Dragon",ratings:7}
+const m2 = {"name":"Transformers: Return of the Beasts",ratings:9}
+const m3 = {"name":"Karate Kid",ratings:10}
+db.movies.insertMany([m1,m2,m3])
+---
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('68593226e23ed966bce7b750'),
+    '1': ObjectId('68593226e23ed966bce7b751'),
+    '2': ObjectId('68593226e23ed966bce7b752')
+  }
+}

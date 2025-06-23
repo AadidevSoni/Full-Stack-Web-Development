@@ -1,0 +1,49 @@
+Number of collections 
+db.movies.find().count()
+---
+4
+
+Providing limit to number of collections 
+db.movies.find().limit(2)
+---
+{
+  _id: ObjectId('6859306f3732f131cd872f9d'),
+  'name:': 'Avengers End Game',
+  ratings: 8
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b750'),
+  name: 'How to train your Dragon',
+  ratings: 7
+}
+
+Soring the names of the movie aqscending order 
+db.movies.find({},{"name":1}).sort({"name":1})
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b750'),
+  name: 'How to train your Dragon'
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid'
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b751'),
+  name: 'Transformers: Return of the Beasts'
+}
+
+To Sort in descending order 
+db.movies.find({},{"name":1}).sort({"name":-1})
+
+Skipping a movie 
+db.movies.find({},{"name":1}).sort({"name":1}).skip(1)  //Skips the first moive alphabetically first
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid'
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b751'),
+  name: 'Transformers: Return of the Beasts'
+}

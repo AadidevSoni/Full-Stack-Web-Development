@@ -1,0 +1,63 @@
+db.movies.find()
+---
+{
+  _id: ObjectId('6859306f3732f131cd872f9d'),
+  'name:': 'Avengers End Game',
+  ratings: 8
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b750'),
+  name: 'How to train your Dragon',
+  ratings: 7
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b751'),
+  name: 'Transformers: Return of the Beasts',
+  ratings: 9
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid',
+  ratings: 10
+}
+
+Finding Specific Data
+db.movies.find({"name":"Karate Kid"})
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid',
+  ratings: 10
+}
+
+To just get the name of the movie 
+db.movies.find({"name":"Karate Kid"},{"name":1})
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid'
+}
+
+To get everything but name of the movie 
+db.movies.find({"name":"Karate Kid"},{"name":0})
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  ratings: 10
+}
+
+To get all the data but just their names 
+db.movies.find({},{"name":1})
+---
+{
+  _id: ObjectId('68593226e23ed966bce7b750'),
+  name: 'How to train your Dragon'
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b751'),
+  name: 'Transformers: Return of the Beasts'
+}
+{
+  _id: ObjectId('68593226e23ed966bce7b752'),
+  name: 'Karate Kid'
+}
