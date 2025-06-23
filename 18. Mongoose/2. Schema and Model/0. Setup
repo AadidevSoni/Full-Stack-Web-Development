@@ -1,0 +1,3 @@
+npm init -y
+"type":"module"
+aadidev@Aadidevs-MacBook-Pro 18. Mongoose % npm i express nodemon mongoose dotenv
