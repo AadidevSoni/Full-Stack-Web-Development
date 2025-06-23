@@ -1,0 +1,1 @@
+res.sendFile(path.join(process.cwd(), './16. ExpressJS/12. Serving Static Files/public/index.html'));

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+</head>
+<body>
+  <!--
+  <h1>HOME</h1>
+  <h4>This is HOME page</h4>
+  -->
+
+  <!-- Display variable -->
+   <%= name %>
+   2+2 = <%= 2+2 %>
+   <%= name.toUpperCase() %>
+
+  <!-- Conditional rendering -->
+
+   <% if(userID === 18){ %>
+    <h1>USER ID: <%= userID %> </h1>
+   <% }else if(userID === 30) { %>
+    <h2>USER ID: <%= userID %> </h2>
+   <% }else { %>
+    <h1>Nothing</h1>
+   <% } %>
+
+   <!-- For Loops -->
+
+   <% for(let i=0;i<10;i++) { %>
+    <h3>i = <%=i%> </h3>
+   <% } %>
+
+      <!-- For in loop -->
+    <% const data = [1,2,3,4,5] %>
+    <% for(d in data){ %>
+      <%=d%>
+    <% } %>
+    
+    <br>
+
+   <!-- For of loop -->
+    <% const data1 = [1,2,3,4,5] %>
+    <% for(d of data1){ %>
+      <%=d%>
+    <% } %>
+  
+  <% var current = new Date() %>
+  <h1>Todays Date: <%= current %></h1>
+
+</body>
+</html>
