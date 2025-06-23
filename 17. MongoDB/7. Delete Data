@@ -1,0 +1,16 @@
+db.movies.deleteOne.help()
+----
+db.collection.deleteOne(filter, options)
+Removes a single document from a collection.
+For more information on usage: https://docs.mongodb.com/manual/reference/method/db.collection.deleteOne
+
+Delete a single movie 
+db.movies.deleteOne({"name":"Transformers"})
+
+Deleting Many 
+db.movies.deleteMany({ratings: 0})
+---
+{
+  acknowledged: true,
+  deletedCount: 2
+}

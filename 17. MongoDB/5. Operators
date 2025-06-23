@@ -1,0 +1,5 @@
+Less Than a specific rating
+db.movies.find({ratings: {$lt:10}})
+
+Greater than a specific rating 
+db.movies.find({ratings: {$gt:9}})

@@ -1,0 +1,16 @@
+db.movies.updateOne.help()
+---
+db.collection.updateOne(filter, update, options)
+Updates a single document within the collection based on the filter.
+For more information on usage: https://docs.mongodb.com/manual/reference/method/db.collection.updateOne
+
+Updating rating of a movie 
+db.movies.updateOne({"name":"How to train your Dragon"},{$set: {ratings:5}})
+---
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}

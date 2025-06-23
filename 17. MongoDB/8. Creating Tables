@@ -1,0 +1,10 @@
+db.movies.find().toArray()
+---
+[
+  { _id: ObjectId('68594a62179da4bf0ab150d7'), name: 'Movie1' },
+  { _id: ObjectId('68594a62179da4bf0ab150d8'), name: 'Movie2' },
+  { _id: ObjectId('68594a62179da4bf0ab150d9'), name: 'Movie3' },
+  { _id: ObjectId('68594a62179da4bf0ab150da'), name: 'Movie4' },
+  { _id: ObjectId('68594a62179da4bf0ab150db'), name: 'Movie5' },
+  { _id: ObjectId('68594a62179da4bf0ab150dc'), name: 'Movie6' }
+]
